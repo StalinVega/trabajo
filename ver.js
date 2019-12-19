@@ -22,32 +22,7 @@ const getInfo = async() => {
     } catch (e) {
         return 'No se pudo determinar el clima';
     }
-
 }
 
 
- console.log(tem1);
-
-app.use(express.static(__dirname + '/public'));
-
-
-
-// Express HBS engine
-hbs.registerPartials(__dirname + '/views/parciales');
-app.set('view engine', 'hbs');
-
-app.get('/', function(req, res) {
-    //const grQui = tem1;
-    //const grGua = tem2;
-    res.render('home', {
-        nombre: "stalin vega",
-        //tempQuito: grQui
-    });
-});
-
-
-
-app.listen(port, () => {
-    console.log(`Escuchando peticiones en el puerto ${port}`);
-});
-
+console.log(getInfo());
