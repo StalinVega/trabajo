@@ -4,7 +4,7 @@ const app = express();
 const hbs = require('hbs');
 require('./hbs/helpers');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 let tem1 = 0;
 let tem2 = 0;
 let tem3 = 0;
